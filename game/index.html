@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- これはHTML5を意識して作られたものだよ宣言 -->
+<!-- 実は特に意味はない。おまじない。 -->
+
+<html lang="ja">
+<head>
+ <link rel="stylesheet" href="LinkElement.css" />
+<!-- CSSを他から取り寄せるためのタグだよ -->
+ <meta charset="UTF-8" />
+ <title> HTMLサンプルゲーム</title>
+<!-- 以下にスタイル（見た目, CSS）を記述 -->
+    <style>
+/* ここにも直接CSS書けるけど、別のとこに書いた方が見やすいよ */
+    </style>
+<!-- 以下にスクリプト（プログラム）を記述 -->
+    <script type="text/javascript">
+        "use strict";
+        var y = 250, v = 0, keyDown = false, WALLS = 80, score = 0;
+        var walls = [], slope = 0, timer, ship, main;
+        
+        function init() {
+            main = document.getElementById('main');
+            player = document.getElementById('player');
+            
+            for (var i = 0 ; i < WALLS ; i++){
+                walls[i] = document.createElement("div");
+                walls[i].style.position = "absolute";
+                walls[i].style.top = "100px";
+                walls[i].style.left = i * 10 + "px";
+                walls[i].style.width = "10px";
+                walls[i].style.height = "400px";
+                walls[i].style.backgroundColor = "#333333";
+                main.appendChild(walls[i]);
+            }
+            slope = Math.floor(Math.random() * 5) + 1;
+            timer = setInterval(mainloop, 50);
+            window.addEventListener('keydown', function(){keyDown = true; });
+            window.addEventListener('keyup', function(){keyDown = false; });
+        }
+        function hitTest(){
+            var st = parseInt(player.style.top) + 10;
+            var ah = parseInt(player.style.height);
+            var sb = st + sh - 20;
+            
+            var wt = parseInt(walls[14].style.top);
+            var wh = parseInt(walls[14].style.height);
+            var wb = wh + wt;
+            
+            return (st < wt) || (sb > wb );
+        }
+        function mainloop(){
+            if(hitTest()){
+                clearInterval(timer);
+                document.getElementById('arara').style.Top = (y - 40) + "px";
+                document.getElementById('arara').style.visibility = "visible";
+                return;
+            }
+            
+        }
+    </script>
+    
+</head> 
+
+<!-- 以下に記述、つまりHTMLのお仕事 -->
+ <body onload="init()">
+  <h1 id="title"> 練習ゲーム </h1>
+   <p> ここにテキスト </p>
+   <p> Twitter <span id="Home">ここにトップへのリンク </span> </p>
+   <ul>
+       <li class="red"> 赤 </li>
+       <li class="orange"> 橙 </li>
+       <li class="yellow"> 黄 </li>
+       <li class="green"> 緑 </li>
+       <li class="blue"> 青 </li>
+       <li class="purple"> 紫 </li>
+   </ul>
+<!--
+   <canvas id="canvas" width="600" height="400">
+   </canvas>
+   -->
+   <script type="text/javascript" src="js/script.js">
+       
+       
+   </script>
+ </body>
+
+</html>

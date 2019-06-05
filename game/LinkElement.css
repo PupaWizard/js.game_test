@@ -1,0 +1,68 @@
+
+
+
+#main {
+    width: 800px;
+    height: 600px;
+    background-color: #00cc00;
+    position: absolute;
+    overflow: hidden;
+}
+#player {
+    top: 250px;
+    left: 0px;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    z-index: 100;
+}
+#arara {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 101;
+    visibility: hidden;
+}
+
+
+* {    /* 文章中の全ての要素に適用します */
+    font-size: 12px;
+}
+h1 {    /* 全ての"<h1>"に適用します */
+    font-size: 24px;
+    font-style: italic;    /* フォントのスタイル */
+}
+p {    /* 全ての"<p>"に適用します */
+    font-size: 18px;
+    color: black;    /* 文字の色 */
+/*            background-color: black;    /* 文字の背景の色 */
+}
+
+#Home { /* #Home というidの付いた特定の場所にだけ通じます */
+    color: brown;
+}
+
+.white { /* .white というclassの付いた特定の場所にだけ通じます */
+    color: white;
+}
+.Red { /* .Red というclassの付いた特定の場所にだけ通じます */
+    color: red;
+}
+.orange { /* .orange というclassの付いた特定の場所にだけ通じます */
+    color: orange;
+}
+.yellow { /* .yellow というclassの付いた特定の場所にだけ通じます */
+    color: yellow;
+}
+.green { /* .green というclassの付いた特定の場所にだけ通じます */
+    color: green;
+}
+.blue { /* .Blue というclassの付いた特定の場所にだけ通じます */
+    color: blue;
+}
+.purple { /* .purple というclassの付いた特定の場所にだけ通じます */
+    color: purple;
+}
+.black { /* .black というclassの付いた特定の場所にだけ通じます */
+    color: black;
+}
