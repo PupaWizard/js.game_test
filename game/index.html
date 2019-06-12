@@ -4,15 +4,17 @@
 
 <html lang="ja">
 <head>
- <link rel="stylesheet" href="LinkElement.css" />
+    <link rel="stylesheet" href="LinkElement.css" />
 <!-- CSSを他から取り寄せるためのタグだよ -->
- <meta charset="UTF-8" />
- <title> HTMLサンプルゲーム</title>
+    <meta charset="UTF-8" />
+    <title> サンプルゲーム</title>
+<!-- ページのタイトル。タブとかに乗る名前 -->
+
 <!-- 以下にスタイル（見た目, CSS）を記述 -->
     <style>
 /* ここにも直接CSS書けるけど、別のとこに書いた方が見やすいよ */
     </style>
-<!-- 以下にスクリプト（プログラム）を記述 -->
+<!-- 以下にスクリプト（プログラム、JavaScript）を記述 -->
     <script type="text/javascript">
         "use strict";
         var y = 250, v = 0, keyDown = false, WALLS = 80, score = 0;
@@ -62,26 +64,66 @@
 </head> 
 
 <!-- 以下に記述、つまりHTMLのお仕事 -->
- <body onload="init()">
-  <h1 id="title"> 練習ゲーム </h1>
-   <p> ここにテキスト </p>
-   <p> Twitter <span id="Home">ここにトップへのリンク </span> </p>
-   <ul>
-       <li class="red"> 赤 </li>
-       <li class="orange"> 橙 </li>
-       <li class="yellow"> 黄 </li>
-       <li class="green"> 緑 </li>
-       <li class="blue"> 青 </li>
-       <li class="purple"> 紫 </li>
-   </ul>
+<body onload="init()">
+<!-- ヘッター -->
+    <header id="Header">
+        <p> ここヘッダー </p>
+    </header>
+
+    <h1 class="section"> 練習ゲーム </h1>
+<!--    <h1 id="title"> 練習ゲーム </h1> -->
+
+<!-- アーティクル -->
+<!-- 単体で完結するセクション -->
+    <article>
+        <h2> JavaScriptを使ったゲーム制作の自習 </h2>
+        <p>  </p>
+<!-- articleをさらにarticleで入れ子にしても大丈夫 -->
+        <article>
+            <h3>  </h3>
+        </article>
+    </article>
+
+<!-- 凡庸なセクション -->
+<!-- 多用しても大丈夫なやつ。 -->
+    <section class="section">
+        <p> ここにテキスト </p>
+        <ul>
+           <li class="red"> 赤 </li>
+           <li class="orange"> 橙 </li>
+           <li class="yellow"> 黄 </li>
+           <li class="green"> 緑 </li>
+           <li class="blue"> 青 </li>
+           <li class="purple"> 紫 </li>
+        </ul>
+    </section>
+
+<!-- フッター -->
+    <footer id="Footer">
+        <p> ここフッター </p>>
+<!-- とりあえずTwitter、Github、Qiitaのリンクアイコン -->
+        <a href="https://twitter.com/Pupa_Wizard"
+           target="_blank">
+            <img src="png/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter" width="25" height="25">
+        </a>
+        <a href="https://github.com/YuiUehara"
+            target="_blank">
+            <img src="png/GitHub-Mark-120px-plus.png" alt="Qiita" width="25" height="25">
+        </a>
+        <a href="https://qiita.com/YuiUehara"
+           target="_blank">
+            <img src="png/qiita-favicon.png" alt="Qiita" width="25" height="25">
+        </a>
+<!-- トップページへのリンクとか仕込むなら多分ここ -->
+    </footer>
 <!--
    <canvas id="canvas" width="600" height="400">
    </canvas>
    -->
-   <script type="text/javascript" src="js/script.js">
+    <script type="text/javascript" src="js/script.js">
        
        
-   </script>
- </body>
+    </script>
+</body>
 
 </html>

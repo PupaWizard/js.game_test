@@ -1,12 +1,15 @@
+/* ↓CSSのコメントアウトです。使いこなしましょう。 */
+/*  */
 
-
-
-#main {
-    width: 800px;
-    height: 600px;
-    background-color: #00cc00;
-    position: absolute;
-    overflow: hidden;
+#main { /* メイン画面 */
+    top:10px; /* 上から10px空ける、下からもあるよ */
+    left:10px; /* 左から10px空ける、右からもあるよ */
+    width: 800px; /* 幅、X軸、そのまんまだね */
+    height: 600px; /* 高さ、Y軸、もはや何も言うまい */
+    color:#000000; /* 文字の色 */
+    background-color: #00cc00; /* 文字の背景の色 */
+    position: absolute; /* ボックスの配置: 絶対位置 */
+    overflow: hidden; /* ボックスからはみ出たもの: 隠す！ */
 }
 #player {
     top: 250px;
@@ -38,31 +41,46 @@ p {    /* 全ての"<p>"に適用します */
 /*            background-color: black;    /* 文字の背景の色 */
 }
 
+#Header { /* #Header というidの付いた特定の場所にだけ通じます */
+    color: gray;
+    background-color: whitesmoke;
+}
+
 #Home { /* #Home というidの付いた特定の場所にだけ通じます */
     color: brown;
 }
 
-.white { /* .white というclassの付いた特定の場所にだけ通じます */
+.section { /* .section というclassの付いた特場所にだけ通じます */
+    background-color: whitesmoke;
+}
+
+#Footer { /* #Footer というidの付いた特定の場所にだけ通じます */
+    color: gray;
+    background-color: whitesmoke;
+}
+
+
+.white { /* .white というclassの付いた場所にだけ通じます */
     color: white;
 }
-.Red { /* .Red というclassの付いた特定の場所にだけ通じます */
+.Red { /* .Red というclassの付いた場所にだけ通じます */
     color: red;
 }
-.orange { /* .orange というclassの付いた特定の場所にだけ通じます */
+.orange { /* .orange というclassの付いた場所にだけ通じます */
     color: orange;
 }
-.yellow { /* .yellow というclassの付いた特定の場所にだけ通じます */
+.yellow { /* .yellow というclassの付いた場所にだけ通じます */
     color: yellow;
 }
-.green { /* .green というclassの付いた特定の場所にだけ通じます */
+.green { /* .green というclassの付いた場所にだけ通じます */
     color: green;
 }
-.blue { /* .Blue というclassの付いた特定の場所にだけ通じます */
+.blue { /* .Blue というclassの付いた場所にだけ通じます */
     color: blue;
 }
-.purple { /* .purple というclassの付いた特定の場所にだけ通じます */
+.purple { /* .purple というclassの付いた場所にだけ通じます */
     color: purple;
 }
-.black { /* .black というclassの付いた特定の場所にだけ通じます */
+.black { /* .black というclassの付いた場所にだけ通じます */
     color: black;
 }
