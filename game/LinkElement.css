@@ -59,6 +59,11 @@ p {    /* 全ての"<p>"に適用します */
     background-color: whitesmoke;
 }
 
+a[target=_blank] {
+	padding-right: 20px;
+	background: url(./images/icon_blank.png) right center/11px auto no-repeat;
+}
+
 
 .white { /* .white というclassの付いた場所にだけ通じます */
     color: white;
