@@ -17,6 +17,7 @@
 <!-- 以下にスクリプト（プログラム、JavaScript）を記述 -->
     <script type="text/javascript">
         "use strict";
+//* ↑これがあることでめちゃくちゃ厳しくエラーを判断してくれるよ *//
         var y = 250, v = 0, keyDown = false, WALLS = 80, score = 0;
         var walls = [], slope = 0, timer, ship, main;
         
@@ -77,7 +78,7 @@
 <!-- 単体で完結するセクション -->
     <article>
         <h2> JavaScriptを使ったゲーム制作の自習 </h2>
-        <p>  </p>
+        <p> JavaScriptを使ったゲーム制作の自習 </p>
 <!-- articleをさらにarticleで入れ子にしても大丈夫 -->
         <article>
             <h3>  </h3>
@@ -86,6 +87,19 @@
 
 <!-- 凡庸なセクション -->
 <!-- 多用しても大丈夫なやつ。 -->
+    <section>
+        <p> ここにスクリーン </p>
+    <canvas
+        id="screen"
+        width="400"
+        height="400"
+        style="border:1px solid #000000;">
+<!-- ちなみにDSは256*192で3DSは320*240 -->
+    </canvas>
+    </section>
+
+
+<!-- 凡庸なセクション -->
     <section class="section">
         <p> ここにテキスト </p>
         <ul>
@@ -100,17 +114,17 @@
 
 <!-- フッター -->
     <footer id="Footer">
-        <p> ここフッター </p>>
+        <p> ここフッター </p>
 <!-- とりあえずTwitter、Github、Qiitaのリンクアイコン -->
         <a href="https://twitter.com/Pupa_Wizard"
            target="_blank">
             <img src="png/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter" width="25" height="25">
         </a>
-        <a href="https://github.com/YuiUehara"
+        <a href="https://github.com/PupaWizard"
             target="_blank">
             <img src="png/GitHub-Mark-120px-plus.png" alt="Qiita" width="25" height="25">
         </a>
-        <a href="https://qiita.com/YuiUehara"
+        <a href="https://qiita.com/Pupa_Wizard"
            target="_blank">
             <img src="png/qiita-favicon.png" alt="Qiita" width="25" height="25">
         </a>
